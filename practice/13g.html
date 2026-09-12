@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>13g - nested layouts</title>
+    <style>
+      .main-flex {
+        display: flex;
+      }
+      .pp {
+        height: 50px;
+        width: 50px;
+        margin-right: 20px;
+      }
+      .pp-channel {
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+      }
+      .right-side {
+        display: flex;
+        flex-direction: column;
+        width: 340px;
+      }
+      .video-preview {
+        display: flex;
+        align-items: center;
+      }
+      .video-details {
+        display: flex;
+        flex-direction: column;
+        height: 90px;
+        justify-content: center;
+        padding-left: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-color: lightgray;
+        border-width: 1px;
+        border-style: solid;
+      }
+      .video-thumbnail {
+        height: 90px;
+        width: 120px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-color: lightgray;
+        border-style: solid;
+        border-width: 1px;
+        background-color: lightgray;
+      }
+      .channel-name,
+      .title {
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-flex">
+      <div class="pp">
+        <img src="channels/my-channel.jpeg" class="pp-channel" />
+      </div>
+
+      <div class="right-side">
+        <div class="channel-name">
+          <b>supersimple.dev</b> <span>@SuperSimpleDev</span>
+        </div>
+        <div class="title">
+          What is backend web development? A complete overview. New video is up!
+        </div>
+        <div class="video-preview">
+          <div class="video-thumbnail"></div>
+          <div class="video-details">
+            <div class="youtube">youtube.com</div>
+            <div class="video-title">
+              Backend web developement - a complete overview (2021)
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

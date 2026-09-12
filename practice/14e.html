@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position-fixed & flexbox</title>
+    <style>
+      body {
+        background-color: wheat;
+        height: 3000px;
+        padding-top: 60px;
+      }
+      .header {
+        height: 55px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 50px;
+        padding-left: 50px;
+      }
+      .left-side {
+        display: flex;
+        align-items: center;
+      }
+      .pp {
+        height: 30px;
+        width: 30px;
+        border-radius: 15px;
+        margin-right: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="left-side">
+        <img src="channels/my-channel.jpeg" class="pp" />
+
+        <div class="name">Oliver Cat</div>
+      </div>
+      <div class="right-side">
+        <button>Add Friends</button>
+        <button>Message</button>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>13b - nested flexbox</title>
+  </head>
+  <body>
+    <div class="flex" style="display: flex; height: 60px">
+      <div style="background-color: cornflowerblue; width: 100px"></div>
+      <div style="background-color: brown; width: 200px">
+        <div>row1</div>
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+          "
+        >
+          <div style="background-color: black; color: white">row2</div>
+          <div style="background-color: black; color: white">row2</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

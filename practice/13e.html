@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>13d - nested layout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .box {
+        display: inline-block;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+        padding: 20px 10px;
+        border-radius: 2px;
+      }
+      .all-inboxes {
+        color: gray;
+        margin-bottom: 15px;
+      }
+      .promotion {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      .pp {
+        height: 50px;
+        width: 50px;
+        margin-right: 10px;
+      }
+      .pp-channel {
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+      }
+      .text1,
+      .text2 {
+        font-weight: 800;
+        font-size: 17px;
+        font-family: Roboto;
+        margin-bottom: 4px;
+      }
+      .text3 {
+        color: gray;
+        font-family: Roboto;
+        font-size: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="all-inboxes">ALL INBOXES</div>
+      <div class="promotion">
+        <div class="pp">
+          <img src="channels/channel-1.jpeg" class="pp-channel" />
+        </div>
+        <div class="text">
+          <div
+            class="promo-time"
+            style="display: flex; justify-content: space-between"
+          >
+            <div class="text1">Chewy Promotions</div>
+            <div
+              class="time"
+              style="color: gray; font-family: Roboto; font-size: 14px"
+            >
+              4:58 PM
+            </div>
+          </div>
+
+          <div class="text2">Biggest sales oh the year!</div>
+          <div class="text3">
+            Hey there! We're writting to tell you about our...
+          </div>
+        </div>
+      </div>
+      <div class="promotion">
+        <div class="pp">
+          <img src="channels/channel-3.jpeg" class="pp-channel" />
+        </div>
+        <div class="text">
+          <div
+            class="promo-time"
+            style="display: flex; justify-content: space-between"
+          >
+            <div class="text1">Best Buy</div>
+            <div
+              class="time"
+              style="color: gray; font-family: Roboto; font-size: 14px"
+            >
+              12:23 PM
+            </div>
+          </div>
+
+          <div class="text2">Your Best Buy eReceipt</div>
+          <div class="text3">
+            Thank you for shopping at Best Buy, here is...
+          </div>
+        </div>
+      </div>
+      <div class="promotion">
+        <div class="pp">
+          <img src="channels/channel-4.jpeg" class="pp-channel" />
+        </div>
+        <div class="text">
+          <div
+            class="promo-time"
+            style="display: flex; justify-content: space-between"
+          >
+            <div class="text1">Netflix</div>
+            <div
+              class="time"
+              style="color: gray; font-family: Roboto; font-size: 14px"
+            >
+              9:00 AM
+            </div>
+          </div>
+
+          <div class="text2">Here's what's coming soon to Netflix</div>
+          <div class="text3">Brand new movies ans shows, old favorites...</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

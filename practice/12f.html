@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>12f - flexbox</title>
+    <style>
+      .header {
+        background-color: blueviolet;
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .left-side {
+        color: white;
+        margin-left: 15px;
+      }
+      .download {
+        background-color: blueviolet;
+        border-width: 1px;
+        border-style: solid;
+        border-color: white;
+        color: white;
+        padding-bottom: 6px;
+        padding-top: 6px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-right: 13px;
+      }
+      .middle {
+        width: 360px;
+        border-radius: 30px;
+        border: none;
+        padding-bottom: 6px;
+        padding-top: 6px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="left-side">Home</div>
+      <div>
+        <input type="text" placeholder="Search" class="middle" />
+      </div>
+      <div class="right-side">
+        <button class="download">Download</button>
+      </div>
+    </div>
+  </body>
+</html>

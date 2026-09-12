@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>>Position-fixed & flexbox</title>
+    <style>
+      body {
+        height: 3000px;
+      }
+      .main-flex {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+      }
+      .images {
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 8px;
+      }
+      .pp {
+        height: 40px;
+        width: 40px;
+        border-radius: 20px;
+        margin-bottom: 8px;
+      }
+      .middle {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        background-color: rgb(205, 109, 109);
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 8px;
+      }
+      .info-plus {
+        display: flex;
+        justify-content: space-between;
+      }
+      .right-side {
+        flex: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-flex">
+      <div class="images">
+        <img src="channels/channel-1.jpeg" class="pp" />
+        <img src="channels/my-channel.jpeg" class="pp" />
+        <img src="channels/channel-7.jpeg" class="pp" />
+      </div>
+      <div class="middle">
+        <div class="info-plus">
+          <div>Info</div>
+          <div>+</div>
+        </div>
+        <div># new-videos</div>
+        <div># updates</div>
+        <div># faq</div>
+      </div>
+      <div class="right-side"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid practice</title>
+    <style>
+      .profile-grid {
+        display: grid;
+        grid-template-columns: 150px 150px 150px;
+        column-gap: 20px;
+      }
+      .profile {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+      }
+      .profile-picture-div {
+        width: 150px;
+        height: 120px;
+      }
+      .thumbnail {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .profile-picture {
+        width: 25px;
+        border-radius: 50%;
+        vertical-align: middle;
+      }
+      .mutual-friends-number {
+        display: inline-block;
+        width: 120px;
+        color: rgb(96, 96, 96);
+      }
+      .mutual-friends {
+        margin-top: 8px;
+        margin-bottom: 10px;
+      }
+      .add-friends {
+        background-color: rgb(107, 196, 187);
+        color: white;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border: none;
+        border-radius: 3px;
+        font-weight: 700;
+        margin-bottom: 5px;
+        margin-left: 5px;
+      }
+      p {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="profile-grid">
+      <div class="profile">
+        <div class="profile-picture-div">
+          <img src="thumbnails/thumbnail-1.webp" alt="" class="thumbnail" />
+        </div>
+        <div class="profile-info">
+          <p class="name" style="font-weight: 700; margin-top: 7px">Oliver</p>
+          <div class="mutual-friends">
+            <img src="channels/channel-1.jpeg" alt="" class="profile-picture" />
+            <p class="mutual-friends-number">2 mutual friends</p>
+          </div>
+          <button class="add-friends">Add Friend</button>
+        </div>
+      </div>
+      <div class="profile">
+        <div class="profile-picture-div">
+          <img src="thumbnails/thumbnail-4.webp" alt="" class="thumbnail" />
+        </div>
+        <div class="profile-info">
+          <p class="name" style="font-weight: 700; margin-top: 7px">Mimi</p>
+          <div class="mutual-friends">
+            <img src="channels/channel-2.jpeg" alt="" class="profile-picture" />
+            <p class="mutual-friends-number">3 mutual friends</p>
+          </div>
+          <button class="add-friends">Add Friend</button>
+        </div>
+      </div>
+      <div class="profile">
+        <div class="profile-picture-div">
+          <img src="thumbnails/thumbnail-5.webp" alt="" class="thumbnail" />
+        </div>
+        <div class="profile-info">
+          <p class="name" style="font-weight: 700; margin-top: 7px">Rex</p>
+          <div class="mutual-friends">
+            <img src="channels/channel-3.jpeg" alt="" class="profile-picture" />
+            <p class="mutual-friends-number">4 mutual friends</p>
+          </div>
+          <button class="add-friends">Add Friend</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

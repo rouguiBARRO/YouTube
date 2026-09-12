@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>10b - nested layout</title>
+    <style>
+      p {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      .profile {
+        margin-bottom: 20px;
+      }
+      .profile-picture-div,
+      .profile-info,
+      .follow {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .profile-picture-div {
+        width: 45px;
+        height: 45px;
+        margin-right: 10px;
+      }
+      .profile-picture-img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+      }
+      .stats,
+      .profile-last-name {
+        color: rgb(96, 96, 96);
+      }
+      .profile-first-name {
+        font-weight: 700;
+      }
+      .profile-info {
+        width: 100px;
+        margin-right: 120px;
+      }
+      .follow-btn {
+        padding-top: 4px;
+        padding-bottom: 4px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: rgba(62, 142, 207, 0.957);
+        color: white;
+        border: none;
+        border-radius: 2px;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="profile">
+      <div class="profile-picture-div">
+        <img
+          src="9.jpg"
+          alt="personne entrant dans une mosquee"
+          class="profile-picture-img"
+        />
+      </div>
+      <div class="profile-info">
+        <p class="profile-first-name">Oliver</p>
+        <p class="profile-last-name">the cat</p>
+        <p class="stats">Popular</p>
+      </div>
+      <div class="follow">
+        <button class="follow-btn">Follow</button>
+      </div>
+    </div>
+    <div class="profile">
+      <div class="profile-picture-div">
+        <img
+          src="9.jpg"
+          alt="personne entrant dans une mosquee"
+          class="profile-picture-img"
+        />
+      </div>
+      <div class="profile-info">
+        <p class="profile-first-name">Mimi</p>
+        <p class="profile-last-name">Sleepy Cat</p>
+        <p class="stats">Popular</p>
+      </div>
+      <div class="follow">
+        <button class="follow-btn">Follow</button>
+      </div>
+    </div>
+    <div class="profile">
+      <div class="profile-picture-div">
+        <img
+          src="9.jpg"
+          alt="personne entrant dans une mosquee"
+          class="profile-picture-img"
+        />
+      </div>
+      <div class="profile-info">
+        <p class="profile-first-name">Rex</p>
+        <p class="profile-last-name">Happy Bulldog</p>
+        <p class="stats">Popular</p>
+      </div>
+      <div class="follow">
+        <button class="follow-btn">Follow</button>
+      </div>
+    </div>
+  </body>
+</html>

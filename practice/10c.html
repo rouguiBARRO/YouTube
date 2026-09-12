@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>10c-nested layout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      p {
+        font-family: Roboto;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      .thumbnail-row {
+        width: 200px;
+        height: 130px;
+        margin-right: 10px;
+      }
+      .thumbnail {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .thumbnail-row,
+      .video-info {
+        display: inline-block;
+        vertical-align: top;
+      }
+      .video-title {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 26px;
+      }
+      .video-info {
+        width: 300px;
+      }
+      .video-author {
+        margin-top: 8px;
+        margin-bottom: 3px;
+      }
+      .video-author,
+      .video-stats {
+        color: rgb(96, 96, 96);
+        font-size: 17px;
+      }
+      .video-preview {
+        margin-bottom: 17px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="video-preview">
+      <div class="thumbnail-row">
+        <img src="thumbnails/thumbnail-1.webp" alt="" class="thumbnail" />
+      </div>
+      <div class="video-info">
+        <p class="video-title">
+          How to complete against CS degrees (as a self-taught dev)
+        </p>
+        <p class="video-author">SuperSimpleDev</p>
+        <p class="video-stats">1.5K views &middot; 4 months ago</p>
+      </div>
+    </div>
+    <div class="video-preview">
+      <div class="thumbnail-row">
+        <img src="thumbnails/thumbnail-2.webp" alt="" class="thumbnail" />
+      </div>
+      <div class="video-info">
+        <p class="video-title">
+          Which programming language to learn first 2022 (with charts)
+        </p>
+        <p class="video-author">SuperSimpleDev</p>
+        <p class="video-stats">5.7K views &middot; 11 months ago</p>
+      </div>
+    </div>
+    <div class="video-preview">
+      <div class="thumbnail-row">
+        <img src="thumbnails/thumbnail-4.webp" alt="" class="thumbnail" />
+      </div>
+      <div class="video-info">
+        <p class="video-title">
+          Frontend web development - a complete overview (2021)
+        </p>
+        <p class="video-author">SuperSimpleDev</p>
+        <p class="video-stats">1K views &middot; 4 months ago</p>
+      </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 100px 200px 100px">
+      <div style="background-color: aqua">DIV1</div>
+      <div style="background-color: aquamarine">DIV2</div>
+      <div style="background-color: tomato">DIV3</div>
+      <div style="background-color: brown">DIV4</div>
+      <div style="background-color: tomato">DIV5</div>
+    </div>
+  </body>
+</html>
